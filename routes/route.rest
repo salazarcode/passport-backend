@@ -1,0 +1,49 @@
+GET https://passport.intraders.com.co/users
+Authorization: ed607a90e24ddb6a722babf5e21edc67
+
+###
+
+GET https://passport.intraders.com.co/users/mpulidob2@gmail.com
+Authorization: ed607a90e24ddb6a722babf5e21edc67
+
+
+###
+
+POST https://passport.intraders.com.co/users/
+Content-Type: application/json
+Authorization: ed607a90e24ddb6a722babf5e21edc67
+
+{
+    "email": "adriansalvatori@gmail.com",
+    "password": "22281653",
+    "name": "Adrián Salvatori",
+    "phone": "3218212672"
+}
+
+
+###
+
+POST https://passport.intraders.com.co/users/auth
+Content-Type: application/json
+Authorization: ed607a90e24ddb6a722babf5e21edc67
+
+{
+    "email": "mpulidob2@gmail.com",
+    "password": "3GKyqw3j8k."
+}
+
+
+###
+
+DELETE https://passport.intraders.com.co/users/adrian@salvatori.co
+Authorization: ed607a90e24ddb6a722babf5e21edc67
+
+###
+
+PATCH https://passport.intraders.com.co/users/adriansalvatori@gmail.com
+Content-Type: application/json
+Authorization: ed607a90e24ddb6a722babf5e21edc67
+
+{
+    "name" : "Michael Steven Pulido"
+}
